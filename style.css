@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root{
+    --cyan: hsl(179, 62%, 43%);
+    --light-cyan:hsla(179, 62%, 43%,.7);
+    --bright-Yellow: hsl(71, 73%, 54%);
+    --light-Gray: hsl(204, 43%, 93%);
+    --grayish-Blue: hsl(218, 22%, 67%);
+    --white:hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    background-color: var(--light-Gray);
+}
+
+main{
+    max-width: 800px;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+main .first-container{
+    background-color: var(--white);
+    padding: 1.5rem 2rem 2rem 1rem;
+}
+
+main .first-container .title{
+    color: var(--cyan);
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem 0 .75rem;
+}
+
+main .first-container .sub-title{
+    color: var(--bright-Yellow);
+    padding-bottom: .75rem;
+    font-size: 1.5rem;
+}
+
+main .first-container .para{
+    color: var(--grayish-Blue);
+}
+
+main .second-container{
+    display: flex;
+    justify-content: center;
+}
+
+main .second-container > div{
+    flex: 1;
+    color: var(--white);
+}
+
+main .second-container .first-card{
+    background-color: var(--cyan);
+    padding: 1.5rem 1rem 2rem 1rem;
+}
+
+main .second-container > div .card-title{
+    padding-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+main .first-card strong{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+main .first-card span{
+    color: var(--light-Gray);
+}
+
+main .first-card .card-para{
+    padding: 1rem 0;
+}
+
+main .first-card .btn{
+    display: block;
+    width: 70%;
+    margin: auto;
+    margin-top: 1rem;
+    border: none;
+    outline: none;
+    padding: .75rem 1rem;
+    border-radius: 8px;
+    background-color: var(--bright-Yellow);
+    font-size: 1.1rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+main .second-container .second-card{
+    background-color: var(--light-cyan);
+    padding: 1.5rem 2rem 2rem 1rem;
+}
+
+main .second-card ul li{
+    list-style: none;
+}
+
+footer{
+    text-align: center;
+    margin-top:1rem;
+}
+
+footer a{
+    color: var(--cyan);
+    text-decoration: none;
+}
+
+@media screen and (max-width:700px) {
+    body{
+        display: block;
+    }
+
+    main{
+        width: 95%;
+        margin: .5rem;
+    }
+
+    main .second-container{
+        flex-direction: column;
+    }
+
+    footer{
+        margin-bottom: 1rem;
+        padding: 0 .5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
